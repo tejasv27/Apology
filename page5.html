@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Message</title>
+    <title>Apology</title>
     <style>
         body {
             display: flex;
@@ -11,36 +11,38 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #fffacd;
-            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow: hidden;
         }
         .container {
             text-align: center;
+            animation: slideInUp 2s ease-in-out;
         }
         .message {
             font-size: 24px;
-            animation: fadeIn 2s ease-in-out;
+            color: #e91e63;
+            animation: slideInUp 2s ease-in-out;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        @keyframes slideInUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
-        .btn {
+        .next {
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #ff6347;
-            color: #fff;
+            background-color: #c2185b;
+            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            animation: bounce 2s infinite;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="message">Please don’t leave me. You mean the world to me.</div>
-        <button class="btn" onclick="window.location.href='page1.html'">Forgive Me</button>
+        <div class="message">I'm so sorry for all the mistakes that made you angry and irritated, Marsmellow. 😔</div>
+        <button class="next" onclick="window.location.href='page6.html'">Next</button>
     </div>
 </body>
 </html>

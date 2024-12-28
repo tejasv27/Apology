@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorry</title>
+    <title>I'm Sorry</title>
     <style>
         body {
             display: flex;
@@ -11,40 +11,48 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f9f9f9;
-            font-family: Arial, sans-serif;
+            background-color: #f3e5f5;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow: hidden;
         }
         .container {
             text-align: center;
-        }
-        .apology {
-            font-size: 24px;
             animation: fadeIn 2s ease-in-out;
+        }
+        .message {
+            font-size: 24px;
+            color: #6a1b9a;
+            animation: bounce 2s infinite;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
-        }
-        .next {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #ff6347;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            animation: bounce 2s infinite;
         }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
             40% { transform: translateY(-30px); }
             60% { transform: translateY(-15px); }
         }
+        .next {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ab47bc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="apology">I'm really sorry...</div>
+        <div class="message">Dear Marsmellow, I am really sorry... 😞</div>
         <button class="next" onclick="window.location.href='page2.html'">Next</button>
     </div>
 </body>
