@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fffacd;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .message {
+            font-size: 24px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Please don’t leave me. You mean the world to me.</div>
+        <button class="btn" onclick="window.location.href='page1.html'">Forgive Me</button>
+    </div>
+</body>
+</html>

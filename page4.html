@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .message {
+            font-size: 24px;
+            animation: zoomIn 2s ease-in-out;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .next {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">I'm so sorry for all the mistakes that made you angry and irritated.</div>
+        <button class="next" onclick="window.location.href='page5.html'">Next</button>
+    </div>
+</body>
+</html>
